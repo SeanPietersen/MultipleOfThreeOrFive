@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MultipleOfThreeOrFive.App\MultipleOfThreeOrFive.App.csproj" />
+  </ItemGroup>
+
 </Project>
