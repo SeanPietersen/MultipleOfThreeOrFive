@@ -2,6 +2,6 @@
 {
     public interface ISumOfMultiples
     {
-        int Solution(int value);
+        int CalculateSumOfMultiplesOfThreeOrFive(int value);
     }
 }

@@ -6,7 +6,7 @@ namespace MultipleOfThreeOrFive.Test
     public class SumOfMultiplesTest
     {
         [Fact]
-        public void SolutionTest1()
+        public void CalculateSumOfMultiplesOfThreeOrFiveTest1_Successful()
         {
             //Arrange
             ISumOfMultiples sumOfMultiples = new SumOfMultiples();
@@ -14,14 +14,14 @@ namespace MultipleOfThreeOrFive.Test
             int value = 10;
 
             //Act
-            var actual = sumOfMultiples.Solution(value);
+            var actual = sumOfMultiples.CalculateSumOfMultiplesOfThreeOrFive(value);
 
             //Assert
             Assert.Equal(expected, actual);
         }
 
         [Fact]
-        public void SolutionTest2()
+        public void CalculateSumOfMultiplesOfThreeOrFiveTest2_ShouldReturnNull_WhenValueIsLessThanZero()
         {
             //Arrange
             ISumOfMultiples sumOfMultiples = new SumOfMultiples();
@@ -29,7 +29,7 @@ namespace MultipleOfThreeOrFive.Test
             int value = -1;
 
             //Act
-            var actual = sumOfMultiples.Solution(value);
+            var actual = sumOfMultiples.CalculateSumOfMultiplesOfThreeOrFive(value);
 
             //Assert
             Assert.Equal(expected, actual);
